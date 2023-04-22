@@ -2,16 +2,12 @@
 
 import { usePathname, useRouter } from "next/navigation";
 
-const BackBtn = () => {
+const BackBtn = ({ issueId }: { issueId: string }) => {
   const router = useRouter();
   const pathname = usePathname();
-  const onIssues = pathname.endsWith("/issues/1");
+  const onIssues = pathname.endsWith(`/issues/${issueId}`);
   return (
-    <>
-      {onIssues ? (
-        <button onClick={router.back}>Back to Whiteboard</button>
-      ) : null}
-    </>
+    <>{onIssues && <button onClick={router.back}>Back to Whiteboard</button>}</>
   );
 };
 
