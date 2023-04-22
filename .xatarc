@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://MarcellusCodes-s-workspace-7clu2k.eu-west-1.xata.sh/db/logissues",
+  "codegen": {
+    "output": "./lib/xata.ts"
+  }
+}
