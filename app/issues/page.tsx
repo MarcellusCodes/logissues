@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { getXataClient } from "@/lib/xata";

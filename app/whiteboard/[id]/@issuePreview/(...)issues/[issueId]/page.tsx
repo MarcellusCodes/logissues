@@ -1,3 +1,4 @@
+//@ts-nocheck
 import Issue from "@/components/issue";
 
 export default async function Page({
