@@ -1,10 +1,15 @@
+import Issue from "@/components/issue";
 
-
-export default function Page() {
+export default async function Page({
+  params: { issueId },
+}: {
+  params: { issueId: string };
+}) {
   return (
     <>
       <div>
-        <p>Whiteboard Issue 1</p>
+        <p>Whiteboard Issue {issueId}</p>
+        <Issue id={issueId} />
       </div>
     </>
   );

@@ -21,7 +21,12 @@ const tables = [
       },
     ],
   },
-  { name: "boards", columns: [] },
+  {
+    name: "boards",
+    columns: [
+      { name: "issue", type: "link", link: { table: "issues" }, unique: true },
+    ],
+  },
 ] as const;
 
 export type SchemaTables = typeof tables;
