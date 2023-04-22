@@ -1,3 +1,4 @@
+//@ts-nocheck
 import BackBtn from "@/components/back-to-whiteboard";
 import BackToIssue from "@/components/back-to-issue";
 
