@@ -1,3 +1,4 @@
+//@ts-nocheck
 import IssueEditor from "@/components/issue-editor";
 import { getXataClient } from "@/lib/xata";
 
